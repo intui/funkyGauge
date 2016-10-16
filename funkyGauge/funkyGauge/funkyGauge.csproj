@@ -97,6 +97,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\CommonAdapter.cs" />
     <Compile Include="Models\IAdapter.cs" />
     <Compile Include="Models\PegelOnlineWSVAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

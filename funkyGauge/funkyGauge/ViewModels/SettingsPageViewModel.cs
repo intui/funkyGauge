@@ -61,7 +61,15 @@ namespace funkyGauge.ViewModels
             myPegel.UpdateFrequency = 60;
             myPegel.Configuration = "super";
             //GaugeAdapters.Add(myPegel);
-            ObservableCollection<PegelOnlineWSVAdapter> myAdapter = new ObservableCollection<PegelOnlineWSVAdapter>();
+            ObservableCollection<PegelOnlineWSVAdapter> myAdapter;
+            if (localSettings.Values["adapters"] != null)
+            {
+                myAdapter = JsonConvert.DeserializeObject<ObservableCollection<PegelOnlineWSVAdapter>>(localSettings.Values["adapters"].ToString());
+            }
+            else
+            {
+                myAdapter = new ObservableCollection<PegelOnlineWSVAdapter>();
+            }
             myAdapter.Add(myPegel);
             GaugeAdapters = myAdapter;
         } ));
