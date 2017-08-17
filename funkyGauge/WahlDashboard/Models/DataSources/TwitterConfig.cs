@@ -6,7 +6,7 @@ namespace WahlDashboard.Models.DataSources
     {
         public static void InitApp()
         {
-            Auth.SetUserCredentials("a","b","c","d");
+            Auth.SetUserCredentials("A","B","c","d");
         }
     }
 }

@@ -255,5 +255,5 @@ paket-files/
 /funkyGauge/libPWMdeviceControl
 /funkyGauge/libPCA9685
 /funkyGauge/libPCA9685
-/funkyGauge/WahlDashboard/Models/DataSources
+/funkyGauge/WahlDashboard/Models/DataSources/TwitterConfig.cs
 
