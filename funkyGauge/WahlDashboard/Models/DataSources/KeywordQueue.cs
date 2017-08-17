@@ -9,7 +9,7 @@ namespace WahlDashboard.Models.DataSources
 {
     class KeywordQueue : Queue
     {
-        // move Duration to config
+        // move Duration to config settings
         public TimeSpan Duration = new TimeSpan(0, 5, 0);
         public override void Enqueue(object o)
         {
