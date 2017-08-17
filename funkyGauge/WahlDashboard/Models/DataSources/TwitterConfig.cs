@@ -6,7 +6,7 @@ namespace WahlDashboard.Models.DataSources
     {
         public static void InitApp()
         {
-            Auth.SetUserCredentials("YourConsumerKey", "YourConsumerSecret", "yourUserAccessToken", "yourUserAccessSecret");
+            Auth.SetUserCredentials("","","","");
         }
     }
 }
